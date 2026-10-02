@@ -1,0 +1,9 @@
+{
+  "name": "@revenueaudit/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "tsx watch src/server.ts", "build": "tsc -p tsconfig.json", "type-check": "tsc -p tsconfig.json --noEmit", "test": "tsx --test src/**/*.test.ts" },
+  "dependencies": { "@revenueaudit/audit-rules": "workspace:*", "@revenueaudit/crawler-worker": "workspace:*", "@revenueaudit/shared": "workspace:*", "cors": "2.8.6", "dotenv": "17.4.2", "express": "5.2.1", "helmet": "8.3.0", "zod": "4.6.5" },
+  "devDependencies": { "@types/cors": "2.8.19", "@types/express": "5.0.6", "@types/node": "26.5.1", "tsx": "4.23.13", "typescript": "7.0.2" }
+}

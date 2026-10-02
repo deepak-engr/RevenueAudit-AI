@@ -1,0 +1,8 @@
+import type { ErrorCode } from "../types/api.js";
+
+export class AppError extends Error {
+  constructor(public readonly statusCode: number, public readonly code: ErrorCode, message: string, public readonly details?: Record<string, string[]>) {
+    super(message);
+    this.name = "AppError";
+  }
+}

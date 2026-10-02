@@ -1,0 +1,12 @@
+{
+  "name": "revenueaudit-ai",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.18.1",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @revenueaudit/web --filter @revenueaudit/api dev",
+    "build": "pnpm -r build",
+    "type-check": "pnpm --filter @revenueaudit/shared build && pnpm -r type-check",
+    "test": "pnpm -r --if-present test"
+  }
+}
