@@ -146,3 +146,15 @@ vite.config.ts.timestamp-*
 apps/*/dist/
 packages/*/dist/
 workers/*/dist/
+
+# Generated ZIP archives (override apps/*/dist/ for zip files only)
+apps/web/dist*.zip
+apps/web/revenueaudit-frontend*.zip*
+
+# Specific output/log files
+apps/api/output.txt
+web-build.txt
+web-test-out.txt
+
+# Temporary debug/probe files
+apps/api/_watchprobe.ts
